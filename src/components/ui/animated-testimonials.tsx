@@ -10,9 +10,7 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
-  date: String,
-  time: String,
-  registrationLink:String
+
 };
 
 export const AnimatedTestimonials = ({
