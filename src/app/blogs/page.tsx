@@ -10,7 +10,7 @@ const page = () => {
         <div className="text-4xl mx-auto font-bold text-neutral-600 dark:text-neutral-400 text-center">
           Explore
           <FlipWords words={words} /> <br />
-          AI Blogs with Aceternity UI
+          AI Blogs with Amiba
         </div>
         <WobbleCardDemo />
         <BentoGridDemo />
