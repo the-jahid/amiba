@@ -158,7 +158,7 @@ const Faq = () => {
         >
           Frequently Asked Questions
         </motion.h2>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {faqData.map((item, index) => (
             <FAQItem
               key={index}

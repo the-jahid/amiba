@@ -7,6 +7,7 @@ import { BackgroundLines } from "@/components/ui/background-lines"
 import { Card, CardContent } from "@/components/ui/card"
 import { StickyScroll } from '@/components/ui/sticky-scroll-reveal'
 import Image from 'next/image'
+import { AnimatedTestimonials } from '@/components/ui/animated-testimonials'
 
 const prizes = [
   { 
@@ -29,72 +30,44 @@ const prizes = [
   },
 ]
 
-const content = [
+
+
+  const testimonials = [
     {
-      title: "Dr. Jane Smith",
-      description:
-        "Dr. Jane Smith is a renowned AI researcher with over 20 years of experience in machine learning and data science. She is a professor at XYZ University and has published numerous papers on AI ethics and fairness.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white">
-          <Image
-            src="/alex-suprun-mynsNaNwVDc-unsplash.jpg" // Replace with the actual image path
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="Dr. Jane Smith"
-          />
-        </div>
-      ),
+      quote:
+        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+      name: "Sarah Chen",
+      designation: "Product Manager at TechFlow",
+      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Mr. John Doe",
-      description:
-        "Mr. John Doe is the CTO of ABC Tech and has led the development of cutting-edge AI solutions in the healthcare sector. With a background in computer science, he brings valuable industry insights.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white">
-          <Image
-            src="/alex-suprun-ZHvM3XIOHoE-unsplash.jpg" // Replace with the actual image path
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="Mr. John Doe"
-          />
-        </div>
-      ),
+      quote:
+        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+      name: "Michael Rodriguez",
+      designation: "CTO at InnovateSphere",
+      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "Prof. Emily Johnson",
-      description:
-        "Prof. Emily Johnson specializes in AI ethics and has been actively involved in policy-making for responsible AI use. She serves on several international AI committees.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white">
-          <Image
-            src="/alexander-hipp-iEEBWgY_6lA-unsplash.jpg" // Replace with the actual image path
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="Prof. Emily Johnson"
-          />
-        </div>
-      ),
+      quote:
+        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+      name: "Emily Watson",
+      designation: "Operations Director at CloudScale",
+      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      title: "ProfJohnson",
-      description:
-        "Prof. Johnson specializes in AI ethics and has been actively involved in policy-making for responsible AI use. She serves on several international AI committees.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white">
-          <Image
-            src="/charlesdeluvio-kVg2DQTAK7c-unsplash.jpg" // Replace with the actual image path
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="Prof. Emily Johnson"
-          />
-        </div>
-      ),
+      quote:
+        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+      name: "James Kim",
+      designation: "Engineering Lead at DataPro",
+      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
-    // Add more judges as needed
+    {
+      quote:
+        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      name: "Lisa Thompson",
+      designation: "VP of Technology at FutureNet",
+      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
   ];
 
 const Prizes = () => {
@@ -165,7 +138,7 @@ const Prizes = () => {
     </div>
     <div  >
         <h2 className='text-3xl md:text-4xl font-bold text-center'>Judging Panel</h2>
-        <StickyScroll content={content} />
+        <AnimatedTestimonials testimonials={testimonials} />
     </div>
     </div>
   )

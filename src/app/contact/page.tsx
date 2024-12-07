@@ -1,8 +1,14 @@
 import React from 'react'
+import ContactForm from '../components/contacts/contactform'
+import { NewsletterSignup } from '../components/contacts/advanced-newsletter-signup'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+     <NewsletterSignup />
+      <ContactForm />
+     
+    </>
   )
 }
 

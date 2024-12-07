@@ -13,7 +13,7 @@ const navItems = [
     subItems: [
       { name: 'Registration', href: '/registration' },
       { name: 'Workshops', href: '/workshops' },
-      { name: 'Submission', href: '/submission' },
+      // { name: 'Submission', href: '/submission' },
     ]
   },
   { name: 'Prizes', href: '/prizes' },
@@ -37,7 +37,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`sticky top-0 z-50 bg-white text-black transition-all duration-300 ${scrolled ? 'shadow-md' : ''}`}>
+    <nav className={`sticky top-0  bg-white z-[400] text-black transition-all duration-300 ${scrolled ? 'shadow-md' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

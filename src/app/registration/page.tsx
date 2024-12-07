@@ -52,7 +52,7 @@ const SignupFormDemo = () => {
   };
 
   return (
-    <div className="mt-5 max-w-6xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
+    <div className="mt-5 max-w-7xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
    
 
       <Accordion type="single" collapsible className="mb-6">
